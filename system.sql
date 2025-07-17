@@ -1,0 +1,28 @@
+/*
+    날짜 : 2025/07/17
+    이름 : 이준우
+    내용 : 5장 데이터베이스 객체
+
+*/
+
+-- 워크북 p13
+-- 실습하기 3-1
+SELECT * FROM DICTIONARY;
+
+SELECT TABLE_NAME FROM USER_TABLES;
+SELECT * FROM DBA_TABLES;
+SELECT * FROM DBA_USERS;
+
+SELECT INSTANCE_NAME, STATUS, DATABASE_STATUS, HOST_NAME FROM V$INSTANCE;
+
+
+
+
+
+
+
+
+
+
+
+

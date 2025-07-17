@@ -17,7 +17,7 @@ CREATE TABLE TYPE_TEST_NUMBER (
 );
 
 // 테이블 데이터 삭제
-delete from type_test_number;
+// delete from type_test_number;
 
 insert into type_test_number (num1) values (1);
 insert into type_test_number (num1) values (123);
@@ -46,7 +46,7 @@ CREATE TABLE USER1 (
     AGE NUMBER
 );
 
-DROP TABLE USER1;
+// DROP TABLE USER1;
 
 // 실습하기 1-5
 INSERT INTO USER1 VALUES ('A101', '김유신', '010-1234-1111', 25);
