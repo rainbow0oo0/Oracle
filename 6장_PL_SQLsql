@@ -1,0 +1,179 @@
+/*
+    날짜 : 2025/07/17
+    이름 : 이준우
+    내용 : 6장 PL/SQL
+*/
+
+-- 실습 1-1
+SET SERVEROUTPUT ON;
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('Hello, Oracle!');
+END;
+/
+
+-- 실습 1-2 
+DECLARE
+    NO      NUMBER(4)     := 1001;
+    NAME    VARCHAR2(10)  := '홍길동';
+    HP      CHAR(13)      := '010-1000-1001;
+    ADDR    VARCHAR2(100) := '부산광역시';
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('번호 : ' || NO);
+    DBMS_OUTPUT.PUT_LINE('이름 : ' || NAME);
+    DBMS_OUTPUT.PUT_LINE('전화 : ' || HP);
+    DBMS_OUTPUT.PUT_LINE('주소 : ' || ADDR);
+END;
+/
+
+-- 실습 2-1
+DECLARE
+    NO      CONSTANT NUMBER(4) := 1001;
+    NAME    VARCHAR2(10);
+    HP      CHAR(13) := '000-0000-0000;
+    AGE NUMBER(2) DEFAULT 1;
+    ADDR VARCHAR2(10) NOT NULL := '부산';
+BEGIN
+    NAME := '김유신';
+    HP := '010-1000-1001';
+    DBMS_OUTPUT.PUT_LINE('번호 : ' || NO);
+    DBMS_OUTPUT.PUT_LINE('이름 : ' || NAME);
+    DBMS_OUTPUT.PUT_LINE('전화 : ' || HP);
+    DBMS_OUTPUT.PUT_LINE('나이 : ' || AGE);
+    DBMS_OUTPUT.PUT_LINE('주소 : ' || ADDR);
+END;
+/
+
+-- 실습 2-2
+DECLARE
+    NO   DEPT.DEPTNO%TYPE;
+    NAME DEPT.DNAME%TYPE;
+    ADDR PEPT.LOC%TYPE;
+BEGIN
+    SELECT *
+    INTO NO, NAME, ADDR
+    FROM DEPT
+    WHERE DEPTNO = 30;
+    
+    DBMS_OUTPUT.PUT_LINE('부서번호 : ' || NO);
+    DBMS_OUTPUT.PUT_LINE('부서명 : ' || NAME);
+    DBMS_OUTPUT.PUT_LINE('주소 : ' || ADDR);
+END;
+/
+
+-- 실습 2-3
+declare
+    -- 선언
+    ROW_DEPT DEPT%ROWTYPE;
+BEGIN
+    -- 처리
+    SELECT *
+    INTO ROW_DEPT
+    FROM DEPT
+    WHERE PEPTNO = 40;
+    
+    -- 출력
+    DBMS_OUTPUT.PUT_LINE('부서번호 : ' || ROW_DEPT.DEPTNO);
+    DBMS_OUTPUT.PUT_LINE('부서명 : ' || ROW_DEPT.DNAME);
+    DBMS_OUTPUT.PUT_LINE('주소 : ' || ROW_DEPT.LOC);
+END;
+/
+
+// 2-4
+DECLARE
+    -- RECORD DEFINE
+    TYPE REC_DEPT IS RECORD(
+        DEPTNO  NUMBER(2),
+        DNAME   DEPT.DNAME&TYPE,
+        LOC     DEPT.LOC%TYPE
+);
+    -- RECORD DECLARE
+    DEPT_REC REC_DEPT;
+BEGIN
+    -- RECORD INITIALIZE
+    DEPT_REC.DEPTNO := 10;
+    DEPT_REC.DNAME := '개발부';
+    DEPT_REC.LOC := '부산';
+    -- RECORD PRINT
+    DBMW_OUTPUT.PUT_LINE('DEPTNO : ' || DEPT_REC.DEPTNO);
+    DBMS_OUTOUT.PUT_LINE('DNAME : ' || DEPT_REC.DNAME);
+    DBMS_OUTOUT.PUT_LINE('LOC : ' || DEPT_REC.LOC);
+    DBMS_OUTOUT.PUT_LINE('PL/SQL 종료...');
+END;
+/
+
+
+-- 실습 2-5
+  -- 테이블 복사(데이터 제외)
+CREATE TABLE DEPT_RECORD AS SELECT * FROM DEPT WHERE 1 = 0;
+
+DECLARE
+    TYPE REC_DEPT IS RECORD (
+        DEPTNO  NUMBER(2)
+        DNAME   DEPT.DNAME%TYPE,
+        LOC     DEPT.LOC%TYPE
+    );
+    
+//////////////////////////////////////////
+
+-- 실습 4-1
+DECLARE
+    V_DEPT_ROW DEPT%ROWTYPE;
+    
+    -- 커서 선언
+    CURSOR C1 IS SELECT * FROM DEPT WHERE DEPTNO=40;
+BEGIN
+
+    -- 커서 열기
+    OPEN C1;
+    
+    -- 커서 데이터 입력
+    FETCH C1 INTO V_DEPT_ROW;
+    
+    DBMS_OUTPUT.PUT_LINE('DEPTNO : ' V_DEPT_ROW.DEPTNO);
+    DBMS_OUTPUT.PUT_LINE('DNAME : ' V_DEPT_ROW.DNAME);
+    DBMS_OUTPUT.PUT_LINE('LOC : ' || V_DEPT_ROW.LOC);
+    
+    -- 커서 종료
+    CLOSE C1;
+
+END;
+/
+
+-- 실습 4-2
+DECLARE
+    V_DEPT_TOW DEPT%ROWTYPE;
+    CURSOR EMP_CURSOR IS SELECT * FROM EMP;
+BEGIN
+    OPEN CEMP_CURSOR;
+    LOOP
+    
+        FETCH EMP_URSOR INTO V_DEPT_ROW;        
+        EXIT WHEN EPM_CURSOR%NOTFOUND;
+        
+        DBMS_OUTPUT.PUT_LINE('---------------------')
+        DBMS_OUTOUT.PUT_LINE('DEPTNO : ' || V_DEPT_ROW.DEPTNO);
+        DBMS_OUTOUT.PUT_LINE('DNAME : ' || V_DEPT_ROW.DNAME);
+        DBMS_OUTOUT.PUT_LINE('LOC : ' || V-DEPT_ROW.LOC);
+    END LOOP;
+    
+    CLOSE C1;
+END;
+/
+    
+
+-- 실습 4-3
+DECLARE
+    CURSOR C1 IS SELECT * FROM DEPT;
+BEGIN
+    FOR C1_REC IN C1 LOOP
+        DBMS_OUTPUT.PUT_LINE('-----------------------');
+        DBMS_OUTPUT.PUT_LINE('DEPTNO : ' || C1_REC.DEPTNO);
+        DBMS_OUTPUT.PUT_LINE('DNAME : ' || C1_REC.DNAME);
+        DBMS_OUTPUT.PUT_LINE('LOC : ' || C1_REC.LOC);
+    END LOOP;
+END;
+/
+        
+
+
+
