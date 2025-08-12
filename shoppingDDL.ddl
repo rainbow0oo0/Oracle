@@ -132,21 +132,22 @@ insert into "User" values('user8','신사임당','1965-10-21','F','010-5101-1965
 insert into "User" values('user9','이이','1972-11-28','M','010-6101-1972','leelee@nete.com',3400 ,3 ,'부산', SYSDATE);
 insert into "User" values('user10','허난설헌','1992-09-07','F','010-7103-1992',null, 4100, 3,'광주', SYSDATE);
 
---Point
-insert into Point (userid, point, "desc", pointDate) values('user1', 1000 , '회원가입 1000 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user1', 6000, '상품구매 5% 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user3', 2835, '상품구매 5% 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user7', 3610, '상품구매 5% 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user5', 3000, '이벤트 응모 3000 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user2', 1000, '회원가입 1000 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user2', 2000, '이벤트 응모 2000 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user2', 2615, '상품구매 5% 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user3', 1500, '이벤트 응모 1500 적립',SYSDATE);
-insert into Point (userid, point, "desc", pointDate) values('user6', 15840, '상품구매 2% 적립',SYSDATE);
+// Point
+insert into Point values(1, 'user1', 1000 , '회원가입 1000 적립', '2022-01-10 10:50:12');
+insert into Point values(2, 'user1', 6000, '상품구매 5% 적립','2022-01-10 10:50:12');
+insert into Point values(3, 'user3', 2835, '상품구매 5% 적립','2022-01-10 10:50:12');
+insert into Point values(4, 'user7', 3610, '상품구매 5% 적립', '2022-01-10 10:50:12');
+insert into Point values(5, 'user5', 3000, '이벤트 응모 3000 적립', '2022-01-10 10:50:12');
+insert into Point values(6, 'user2', 1000, '회원가입 1000 적립', '2022-01-10 10:50:12');
+insert into Point values(7, 'user2', 2000, '이벤트 응모 2000 적립', '2022-01-10 10:50:12');
+insert into Point values(8, 'user2', 2615, '상품구매 5% 적립', '2022-01-10 10:50:12');
+insert into Point values(9, 'user3', 1500, '이벤트 응모 1500 적립', '2022-01-10 10:50:12');
+insert into Point values(10, 'user6', 15840, '상품구매 2% 적립', '2022-01-10 10:50:12');
 
 // Sellers
-insert into Seller values( 10001, '(주)다팔아', '01-201-1976', '정우성', '서울');
-insert into Seller values( 10002, '판매의민족', '02-102-1975', '이정재', '서울');
+insert into Seller values(10001, '(주)다팔아', '02-201-1976', '정우성', '서울');
+insert into Seller values(10002, '판매의민족', '02-102-1975', '이정재', '서울');
+
 insert into Seller values( 10003, '멋남', '031-103-1989', '원빈', '경기');
 insert into Seller values( 10004, '스타일살아', '032-201-1979', '이나영', '경기');
 insert into Seller values( 10005, '(주)삼성전자', '02-214-1966', '장동건', '서울');

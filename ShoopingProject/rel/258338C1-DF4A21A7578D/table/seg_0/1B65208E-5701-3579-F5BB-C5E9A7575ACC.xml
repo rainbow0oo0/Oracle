@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B65208E-5701-3579-F5BB-C5E9A7575ACC" name="Seller">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:14:26 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sellerNo" id="B08E7A77-B592-2D7B-062E-D43407EEDEBF">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:43 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="company" id="D8A1195E-6D91-020D-4BB3-FBE904FDCF2F">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:43 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tel" id="9F4AE870-A6C4-E326-1122-0EB643919B9E">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:43 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="manager" id="7F214045-8FA3-9E32-8BD9-301CB550D4AC">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:43 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="62F79ED9-C1A9-3FDD-D2F1-A5715E79DB72">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:43 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="332EBDE7-745E-FABF-8402-BE16FEBE4FA1" name="Seller_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:25:43 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B08E7A77-B592-2D7B-062E-D43407EEDEBF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

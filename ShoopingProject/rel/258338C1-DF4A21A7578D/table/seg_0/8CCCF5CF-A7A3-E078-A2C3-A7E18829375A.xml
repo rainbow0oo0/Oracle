@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CCCF5CF-A7A3-E078-A2C3-A7E18829375A" name="Category">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:14:27 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cateNo" id="306DEEF2-6672-9F98-5671-C5F9ED224D31">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:27:28 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cateName" id="568A00D7-B069-7C33-70B2-33AA4AEC7383">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:27:28 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8DB4C47-F955-69FF-48B6-1C06A241BC29" name="Category_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:27:28 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="306DEEF2-6672-9F98-5671-C5F9ED224D31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

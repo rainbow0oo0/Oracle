@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C1E83F49-1A30-4FC8-46D7-6056ECC0FFF5" name="Point">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:14:24 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pointNo" id="DF9AFA40-9F75-4C36-3C1C-86B4DC117AB9">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:05 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="userId" id="461F3B6B-6004-ECA5-A8C4-956F1EDADF72">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:49:28 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AC32A1F0-C33C-B69A-21C2-BF0F882C6EDA" referredColumn="EBBDC7C8-9D9E-72EA-2633-BB92B2E5F3B3"/>
+</associations>
+</Column>
+<Column name="point" id="011172F5-7212-9175-CDB0-4F687D2B4084">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:05 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desc" id="19F2AB07-2F8E-3CE5-07BA-870EC2DE37DC">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:05 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pointDate" id="1EEF827F-B541-9843-3DD4-058E6E9869C7">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:05 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CF36ACB-790C-2F29-5A20-7B4E61CE560A" name="Point_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:24:05 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF9AFA40-9F75-4C36-3C1C-86B4DC117AB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2ABEDAB-CF24-5E87-6FFF-D1BFFEABD466" name="Point_User_FK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:49:28 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="461F3B6B-6004-ECA5-A8C4-956F1EDADF72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

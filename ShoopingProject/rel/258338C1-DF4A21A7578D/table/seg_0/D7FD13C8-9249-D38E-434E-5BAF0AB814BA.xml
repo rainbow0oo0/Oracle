@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D7FD13C8-9249-D38E-434E-5BAF0AB814BA" name="User">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:14:19 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="userId" id="EBBDC7C8-9D9E-72EA-2633-BB92B2E5F3B3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="4D0E09F6-7479-B0C0-3CEE-E9F16D751EDC">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth" id="100D0A76-227F-41E0-E78C-9F2A2881CE15">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="C33886BB-A93B-FA9C-1BE0-1E3B8BA3A456">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hp" id="E01C4D46-C0C4-CDFE-A1DC-C5296B7357AD">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13</dataTypeSize>
+<ownDataTypeParameters>13,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="02C42311-9EAB-ED5B-4EEB-05AC81F23082">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="point" id="5BBBA87E-B760-FBAC-2DCA-2153CA03AD5F">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:21:16 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="level" id="E88A0CE8-AB4C-4216-B62F-8A83A6291A35">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="0E045B16-425A-D1CA-ACF4-901DB071D2D3">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:21:16 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="regDate" id="C413D84C-C0E9-BB1F-AAF7-5B6026FA7914">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:21:16 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E21F2F5-A7CE-EB40-6725-E498D18B0F46" name="User_PK">
+<createdBy>GGG</createdBy>
+<createdTime>2025-08-11 06:17:59 UTC</createdTime>
+<ownerDesignName>ShoopingProject</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBBDC7C8-9D9E-72EA-2633-BB92B2E5F3B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
